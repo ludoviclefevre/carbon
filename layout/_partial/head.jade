@@ -1,9 +1,48 @@
 meta(charset='UTF-8')
 if config.author
   meta(name='author', content=config.author)
+
 if config.description
   meta(name='desciption', content=config.description)
+
 meta(name='viewport', content='width=device-width, initial-scale=1.0')
+
+//- Twitter card
+meta(name='twitter:card', content='summary')
+meta(name='twitter:url', content=page.permalink)
+if page.title
+  meta(name='twitter:title', content=page.title)
+else
+  meta(name='twitter:title', content=config.title)
+if config.description
+  meta(name='twitter:description', content=config.description)
+if theme.twitter_card.default_image
+  meta(name='twitter:image', content=theme.twitter_card.default_image)
+
+//- Google+
+if page.title
+  meta(itemprop='name', content=page.title)
+else
+  meta(itemprop='name', content=config.title)
+if config.description
+  meta(itemprop='description', content=config.description)
+if theme.google_plus.default_image
+  meta(itemprop='image', content=theme.google_plus.default_image)
+
+//- Facebook Open Graph
+if page.title
+  meta(property='og:title', content=page.title)
+else
+  meta(property='og:title', content=config.title)
+if config.description
+  meta(property='og:description', content=config.description)
+if theme.facebook_open_graph.default_image
+  meta(property='og:image', content=theme.facebook_open_graph.default_image)
+meta(property='og:type', content='article')
+meta(property='og:url', content=page.permalink)
+meta(property='og:site_name', content=config.title)
+meta(property='og:admins', content=theme.facebook_open_graph.page_user_id)
+
 title
   if page.title
     = page.title

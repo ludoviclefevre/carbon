@@ -9,9 +9,25 @@ repo: https://icylogic.net
 duoshuo:
 
 cdn:
-  normalize: '//dn-staticfile.qbox.me'    
+  normalize: '//dn-staticfile.qbox.me'
   carbon: ''
   duoshuo: '//static.duoshuo.com'
   jQuery: '//dn-staticfile.qbox.me'
-  pjax: '//dn-staticfile.qbox.me'    
-  
+  pjax: '//dn-staticfile.qbox.me'
+
+# Custom configuration
+## Twitter card header metatags
+twitter_card:
+  default_image:
+
+## Google+ microdata
+## See: https://developers.google.com/+/web/snippet/
+## http://schema.org/Article
+## http://schema.org/Blog
+google_plus:
+  item_type: http://schema.org/Blog
+  default_image:
+
+## Facebook Open Graph
+facebook_open_graph:
+  page_user_id:
