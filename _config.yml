@@ -27,7 +27,3 @@ twitter_card:
 google_plus:
   item_type: http://schema.org/Blog
   default_image:
-
-## Facebook Open Graph
-facebook_open_graph:
-  page_user_id:
