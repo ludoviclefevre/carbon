@@ -1,6 +1,7 @@
 menu:
   about: /about
   archives: /archives
+  tags: /tags
 
 excerpt: true
 feed: /atom.xml
