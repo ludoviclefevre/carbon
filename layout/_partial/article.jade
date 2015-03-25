@@ -2,10 +2,6 @@ mixin article(article)
   include meta
   .meta
     +meta(article)
-  .extra
-    +extra('tags', article.tags)
-  .extra
-    +extra('categories', article.categories)
   .article-content
     if article.photos
       .gallery
@@ -25,4 +21,7 @@ mixin article(article)
     if article.next
       a#right-navigator(href=url_for(article.next.path))
         +title(article.next)
-
+  .extra
+    +extra('tags', article.tags)
+  .extra
+    +extra('categories', article.categories)

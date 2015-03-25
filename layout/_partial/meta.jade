@@ -8,6 +8,6 @@ mixin meta(article)
       a(href=url_for(article.path))
         +title(article)
   .article-date
-    a.extra-switch(href='javascript:void(0);')
+    a(href=article.link)
       include post-meta
       +date(article.date)

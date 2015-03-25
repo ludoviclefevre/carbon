@@ -4,8 +4,10 @@ mixin date(date)
 mixin extra(name, list)
   = __(name) + ': '
   if list && list.length > 0
-    each item in list.toArray()
-      = item.name + ' '
+    each item, index in list.toArray()
+      if index>0
+        = ', '
+      a(href=url_for(item.path))=item.name
   else
     = __('none')
 
