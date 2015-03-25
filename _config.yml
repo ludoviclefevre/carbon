@@ -9,7 +9,7 @@ repo: https://icylogic.net
 duoshuo:
 
 cdn:
-  normalize: '//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3'
+  normalize: '//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2'
   carbon: ''
   duoshuo: '//static.duoshuo.com'
   jQuery: '//ajax.googleapis.com/ajax/libs/jquery/2.1.3'
