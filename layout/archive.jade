@@ -1,5 +1,8 @@
 extends base
 block content
+  span
+    if page.category
+      = __('archive-for') + " " + page.category
   ul.archive-list
     include _partial/list
     +list(site)

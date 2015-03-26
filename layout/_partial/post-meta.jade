@@ -2,12 +2,10 @@ mixin date(date)
   = date.format(config.date_format)
 
 mixin extra(name, list)
-  = __(name) + ': '
   if list && list.length > 0
+    = __(name) + ': '
     each item, index in list.toArray()
-      if index>0
+      if index > 0
         = ', '
       a(href=url_for(item.path))=item.name
-  else
-    = __('none')
 
