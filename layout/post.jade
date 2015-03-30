@@ -3,3 +3,5 @@ extends base
 block content
   include _partial/article
   +article(page)
+  if config.disqus_shortname
+    include _partial/disqus

@@ -15,6 +15,7 @@ cdn:
   duoshuo: '//static.duoshuo.com'
   jQuery: '//ajax.googleapis.com/ajax/libs/jquery/2.1.3'
   pjax: '//cdnjs.cloudflare.com/ajax/libs/jquery.pjax/1.9.5'
+  fontawesome: '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css'
 
 # Custom configuration
 ## Twitter card header metatags
