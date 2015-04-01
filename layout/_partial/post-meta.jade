@@ -1,4 +1,5 @@
 mixin date(date)
+  time(datetime=date.format(config.schema_org.datetime_format),itemprop='datePublished')
   = date.format(config.date_format)
 
 mixin extra(name, list)
