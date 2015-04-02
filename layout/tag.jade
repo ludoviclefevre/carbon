@@ -1,8 +1,0 @@
-extends base
-block content
-  span
-    = __('tagged-with') + " " + page.tag
-  ul.archive-list
-    include _partial/list
-    +list(site)
-     
