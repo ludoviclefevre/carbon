@@ -15,9 +15,9 @@ ul#footer-links
     a.out-site(href=url_for(theme.feed))
       = __("feed")
   li
-    a.out-site(href=theme.repo) Theme.Carbon
+    a.out-site(href=theme.repo,target='_blank') Theme.Carbon
   li
-    a.out-site(href='https://github.com/hexojs/hexo') Hexo
+    a.out-site(href='https://github.com/hexojs/hexo',target='_blank') Hexo
 
 script(src=theme.cdn.jQuery + '/jquery.min.js')
 if theme.duoshuo
