@@ -7,7 +7,8 @@ excerpt: true
 feed: /atom.xml
 repo: https://icylogic.net
 
-duoshuo:
+duoshuo: false
+mathjax: true
 
 cdn:
   normalize: '//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2'
@@ -15,6 +16,7 @@ cdn:
   duoshuo: '//static.duoshuo.com'
   jQuery: '//ajax.googleapis.com/ajax/libs/jquery/2.1.3'
   pjax: '//cdnjs.cloudflare.com/ajax/libs/jquery.pjax/1.9.5'
+  mathjax: '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
   fontawesome: '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css'
 
 # Custom configuration
