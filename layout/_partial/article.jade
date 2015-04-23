@@ -2,7 +2,7 @@ mixin article(article)
   include meta
   .meta
     +meta(article)
-  .article-content
+  .article-content(itemprop='articleBody')
     if article.photos
       .gallery
         for photo in article.photos

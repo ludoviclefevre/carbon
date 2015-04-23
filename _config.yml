@@ -29,5 +29,4 @@ twitter_card:
 ## http://schema.org/Article
 ## http://schema.org/Blog
 google_plus:
-  item_type: http://schema.org/Blog
   default_image:

@@ -1,12 +1,12 @@
 doctype html
-html(lang=config.language,itemscope,itemtype=theme.google_plus.item_type)
+html(lang=config.language)
   head
     include _partial/head
   body
-    #container
+    #container(itemscope='',itemtype='http://schema.org/Blog')
       #banner
         include _partial/banner
-      #content
+      #content(itemscope='',itemtype='http://schema.org/BlogPosting')
         block content
       nav#footer
         include _partial/footer

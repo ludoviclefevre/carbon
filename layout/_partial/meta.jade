@@ -1,5 +1,5 @@
 mixin meta(article)
-  h2.article-title
+  h2.article-title(itemprop='name headline')
     include title
     if article.link
       a(href=article.link, target='_blank')
