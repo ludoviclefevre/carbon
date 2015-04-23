@@ -7,7 +7,7 @@ mixin article(article)
       .gallery
         for photo in article.photos
           a.gallery-img(href=url_for(photo))
-            img(src=url_for(photo))
+            img(src=url_for(photo),itemprop='image')
     != article.content
   +comments_thread(article)
   nav.pagination
@@ -19,10 +19,10 @@ mixin article(article)
     if article.next
       a#right-navigator(href=url_for(article.next.path))
         +title(article.next)
-  .extra
-    +extra('tags', article.tags)
-  .extra
-    +extra('categories', article.categories)
+  .extra.categories
+    +tags(article.tags)
+  .extra.tags
+    +categories(article.categories)
   if theme.mathjax
     include mathjax
 

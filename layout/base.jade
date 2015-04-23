@@ -6,7 +6,7 @@ html(lang=config.language)
     #container(itemscope='',itemtype='http://schema.org/Blog')
       #banner
         include _partial/banner
-      #content(itemscope='',itemtype='http://schema.org/BlogPosting')
+      #content(itemprop='blogPosts',itemscope='',itemtype='http://schema.org/BlogPosting')
         block content
       nav#footer
         include _partial/footer

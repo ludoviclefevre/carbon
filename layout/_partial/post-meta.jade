@@ -2,11 +2,18 @@ mixin date(date)
   time(datetime=date.format(config.schema_org.datetime_format),itemprop='datePublished')
     = date.format(config.date_format)
 
-mixin extra(name, list)
+mixin categories(list)
   if list && list.length > 0
-    = __(name) + ': '
+    = __('tags') + ': '
     each item, index in list.toArray()
       if index > 0
         = ', '
       a(href=url_for(item.path))=item.name
 
+mixin tags(list)
+  if list && list.length > 0
+    = __('categories') + ': '
+    each item, index in list.toArray()
+      if index > 0
+        = ', '
+      a(href=url_for(item.path),itemprop='keywords')=item.name
