@@ -30,3 +30,5 @@ twitter_card:
 ## http://schema.org/Blog
 google_plus:
   default_image:
+
+favicon: i/favicon/
